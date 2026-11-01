@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة الوزير — وزارة الأوقاف المصرية</title>
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#F6F1E4;--ink:#1A150B;--mute:#6B5E3E;--line:#E8D9AE;--line2:#EFE4C4;
+  --gold:#B8892B;--gold-d:#7A5A12;--gold-l:#FFF3C9;--hot:#C8102E;--ok-bg:#E6F4EC;--ok-fg:#14613F;--soft:#F6EBD0;
+  --tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='92.063' height='368.252' viewBox='0 0 92.063 368.252'%3E%3Cpath d='M98 -18.8V12.9L86.1 28.8V39.5L98 23.6V55.3L109.8 71.2H117.7L129.6 55.3V12.9L113.8 -8.3L101.9 7.6V-24.1L86.1 -45.3V-34.7Z'/%3E%3Cpath d='M88.7 -54.7L104.4 -33.5L116.3 -49.3V-17.6L132.1 3.6L147.9 -17.6V-49.3L159.7 -33.5L175.5 -54.7V-97.1L172.3 -101.3H164.4L171.5 -91.7V-60L159.7 -44.1L147.9 -60V-91.7L155 -101.3H147L143.9 -97.1V-65.3L132.1 -81.2L120.2 -65.3V-97.1L117.1 -101.3H109.2L116.3 -91.7V-60L104.4 -44.1L92.6 -60V-91.7L99.7 -101.3H91.8L88.7 -97.1Z'/%3E%3Cpath d='M98 349.4V381.2L86.1 397V407.7L98 391.8V423.6L109.8 439.4H117.7L129.6 423.6V381.2L113.8 360L101.9 375.8V344.1L86.1 322.9V333.6Z'/%3E%3Cpath d='M116.3 191.7L104.4 175.8L88.7 197V239.4L100.5 255.3L88.7 271.2V313.6L104.4 334.8L116.3 318.9V350.7L132.1 371.9L147.9 350.6V318.9L159.7 334.8L175.5 313.6V271.2L163.6 255.3L175.5 239.4V197L159.7 175.8L147.9 191.7V160L132.1 138.8L116.3 160Z'/%3E%3Cpath d='M98 87.1V118.8L86.1 102.9V113.6L98 129.5V161.2L86.1 177.1V187.7L101.9 166.5V134.8L113.8 150.7L129.6 129.5V87.1L117.7 71.2H109.8Z'/%3E%3Cpath d='M62.5 71.2L74.3 55.3V23.6L86.1 39.5V28.8L74.3 12.9V-18.8L86.1 -34.7V-45.3L70.3 -24.1V7.6L58.5 -8.3L42.7 12.9V55.3L54.6 71.2ZM46.7 50V18.3L58.5 2.4L70.4 18.3V50L58.5 65.9Z'/%3E%3Cpath d='M6.1 -18.8V12.9L-5.7 28.8V39.5L6.1 23.6V55.3L18 71.2H25.9L37.7 55.3V12.9L21.9 -8.3L10.1 7.6V-24.1L-5.7 -45.3V-34.7ZM10.1 18.3L21.9 2.4L33.8 18.3V50L21.9 65.9L10.1 50Z'/%3E%3Cpath d='M-3.2 -54.7L12.6 -33.5L24.4 -49.3V-17.6L40.2 3.6L56 -17.6V-49.3L67.8 -33.5L83.6 -54.7V-97.1L80.5 -101.3H72.6L79.7 -91.7V-60L67.8 -44.1L56 -60V-91.7L63.1 -101.3H55.2L52.1 -97.1V-65.3L40.2 -81.2L28.4 -65.3V-97.1L25.3 -101.3H17.3L24.4 -91.7V-60L12.6 -44.1L0.8 -60V-91.7L7.9 -101.3H-0L-3.2 -97.1Z'/%3E%3Cpath d='M62.5 439.4L74.3 423.6V391.8L86.1 407.7V397L74.3 381.2V349.4L86.1 333.6V322.9L70.3 344.1V375.8L58.5 360L42.7 381.2V423.6L54.6 439.4Z'/%3E%3Cpath d='M6.1 349.4V381.2L-5.7 397V407.7L6.1 391.8V423.6L18 439.4H25.9L37.7 423.6V381.2L21.9 360L10.1 375.8V344.1L-5.7 322.9V333.6Z'/%3E%3Cpath d='M24.4 318.9V350.7L40.2 371.9L56 350.6V318.9L67.8 334.8L83.6 313.6V271.2L71.8 255.3L83.6 239.4V197L67.8 175.8L56 191.7V160L40.2 138.8L24.4 160V191.7L12.6 175.8L-3.2 197V239.4L8.6 255.3L-3.2 271.2V313.6L12.6 334.8ZM52.1 345.3L40.2 361.2L28.4 345.3V313.6L40.2 297.7L52.1 313.6ZM79.7 276.5V308.2L67.8 324.1L56 308.2V276.5L67.8 260.6ZM56 202.4L67.8 186.5L79.7 202.4V234.1L67.8 250L56 234.1ZM28.4 165.3L40.2 149.4L52.1 165.3V197L40.2 212.9L28.4 197ZM28.4 239.4V207.7L40.2 223.6L52.1 207.7V239.4L63.9 255.3L52.1 271.2V302.9L40.2 287.1L28.4 302.9V271.2L16.6 255.3ZM0.8 234.1V202.4L12.6 186.5L24.4 202.4V234.1L12.6 250ZM0.8 276.5L12.6 260.6L24.4 276.5V308.2L12.6 324.1L0.8 308.2Z'/%3E%3Cpath d='M42.7 129.5L58.5 150.7L70.4 134.8V166.5L86.1 187.7V177.1L74.3 161.2V129.5L86.1 113.6V102.9L74.3 118.8V87.1L62.5 71.2H54.6L42.7 87.1ZM46.7 92.4L58.5 76.5L70.4 92.4V124.1L58.5 140L46.7 124.1Z'/%3E%3Cpath d='M10.1 134.8L21.9 150.7L37.7 129.5V87.1L25.9 71.2H18L6.1 87.1V118.8L-5.7 102.9V113.6L6.1 129.5V161.2L-5.7 177.1V187.7L10.1 166.5ZM10.1 92.4L21.9 76.5L33.8 92.4V124.1L21.9 140L10.1 124.1Z'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,sans-serif;min-height:100vh}
+a{color:var(--gold-d)}a:hover{color:var(--hot)}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.page{max-width:1280px;margin:0 auto;background:var(--bg);min-height:100vh}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:10;background:#fff;display:flex;align-items:center;gap:26px;padding:12px 36px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.topbar>b{font-size:17px}
+.topbar nav{display:flex;gap:26px;margin-inline-start:24px;flex-wrap:wrap}
+.topbar nav a,.topbar nav button{font:inherit;font-weight:700;color:var(--mute);text-decoration:none;background:none;border:0;border-bottom:3px solid transparent;padding:6px 0;cursor:pointer;position:relative}
+.topbar nav a:hover,.topbar nav button:hover{color:var(--gold-d)}
+.topbar nav .on{color:var(--gold-d);border-bottom-color:var(--gold)}
+.clock{margin-inline-start:auto;display:flex;flex-direction:column;line-height:1.4;padding-inline-end:20px;border-inline-end:1px solid var(--line);text-align:end}
+.clock b{font-size:17px;color:var(--gold-d)}
+.clock span{font-size:12.5px;color:var(--mute)}
+.who{display:flex;align-items:center;gap:10px}
+.who b{font-size:13px}
+.who i{width:38px;height:38px;border-radius:50%;background:var(--gold-d);color:#fff;display:grid;place-items:center;font-weight:800;font-style:normal}
+
+/* banner */
+.banner{position:relative;background:linear-gradient(110deg,#E9C766,#C99A2E 55%,#9C7218);padding:48px 56px 118px;overflow:hidden;display:flex;align-items:center;gap:40px}
+/* IQCMP lattice, redrawn as one seamless inline tile (92.063 x 368.252) and used as a mask so it can be tinted */
+.banner .pat,.banner .sheen{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:var(--tile);mask-image:var(--tile);-webkit-mask-size:92.063px 368.252px;mask-size:92.063px 368.252px;-webkit-mask-repeat:repeat;mask-repeat:repeat}
+.banner .pat{background:#fff;opacity:.42;
+  -webkit-mask-image:var(--tile),radial-gradient(ellipse 70% 140% at 50% 50%,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 35%,#000 100%);
+  mask-image:var(--tile),radial-gradient(ellipse 70% 140% at 50% 50%,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 35%,#000 100%);
+  -webkit-mask-size:92.063px 368.252px,100% 100%;mask-size:92.063px 368.252px,100% 100%;
+  -webkit-mask-repeat:repeat,no-repeat;mask-repeat:repeat,no-repeat;
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.banner .sheen{background:linear-gradient(100deg,transparent 35%,#fff 50%,transparent 65%) no-repeat;background-size:60% 100%;opacity:.8;animation:sweep 5s ease-in-out infinite}
+.banner .star{position:absolute;width:9px;height:9px;background:var(--gold-l);transform:rotate(45deg);animation:twinkle 3s ease-in-out infinite;pointer-events:none}
+.medal{position:relative;width:200px;height:240px;border-radius:100px 100px 14px 14px;background:#fff;display:grid;place-items:center;flex:none;box-shadow:0 0 0 5px #FFF8E0,0 0 0 7px var(--gold-d)}
+.medal img{width:170px;height:170px;object-fit:contain}
+.hello{position:relative;color:#fff;min-width:0}
+.hello .greet{font-weight:800;font-size:18px;color:var(--gold-l)}
+.hello h1{font-family:Amiri,serif;font-size:56px;line-height:1.3;margin:6px 0 0;font-weight:700;text-shadow:0 2px 12px #5A3F0A66}
+.hello p{font-size:17px;margin:8px 0 0;color:var(--gold-l)}
+
+/* stats */
+.stats{margin:-66px 56px 0;position:relative;background:#fff;border-radius:18px;box-shadow:0 14px 40px #8A641833;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-bottom:5px solid var(--gold);overflow:hidden}
+.stat{padding:20px 26px;text-align:center;border:0;background:none;font:inherit;color:inherit;display:block;width:100%}
+.stat+.stat{border-inline-start:1px solid var(--line2)}
+.stat .n{display:block;font-family:Amiri,serif;font-size:58px;line-height:1.3;color:var(--gold-d)}
+.stat b{display:block}
+
+/* apps */
+.apps{padding:30px 56px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;scroll-margin-top:70px}
+.app{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px #8A64181c;overflow:hidden}
+.app .bar{position:absolute;top:0;inset-inline:0;height:5px}
+.app .head{display:flex;align-items:flex-start;justify-content:space-between}
+.app .ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;box-shadow:0 8px 18px #8A64182e}
+.pill{font-size:12px;font-weight:800;border-radius:20px;padding:2px 12px;background:var(--ok-bg);color:var(--ok-fg)}
+.pill.new{background:var(--soft);color:var(--gold-d)}
+.app h3{font-size:16.5px;line-height:1.5;display:block;margin:0}
+.app p{margin:4px 0 0;font-size:13px;line-height:1.7;color:var(--mute)}
+.open{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;background:var(--gold-d);color:#fff;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;transition:background .15s}
+.open:hover,.open:focus-visible{background:var(--gold);color:#fff}
+.open.off{background:#CDBF9A;cursor:not-allowed;pointer-events:none}
+
+/* reports */
+.reports{margin:22px 56px 40px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 22px;scroll-margin-top:70px}
+.reports h2{margin:14px 0 4px;font-size:19px;color:var(--gold-d)}
+.row{display:grid;grid-template-columns:130px 1fr 140px;gap:16px;padding:13px 0;border-bottom:1px solid var(--line2);align-items:center}
+.row:last-child{border-bottom:0}
+.row .per{color:var(--gold-d);font-weight:700}
+.row small{color:var(--mute)}
+
+
+@keyframes sweep{from{background-position:120% 0}to{background-position:-20% 0}}
+@keyframes twinkle{0%,100%{opacity:.1;transform:rotate(45deg) scale(.6)}50%{opacity:.95;transform:rotate(45deg) scale(1.2)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+@media(max-width:900px){
+  .topbar{padding:10px 20px;gap:14px}
+  .topbar nav{margin-inline-start:0;gap:18px;order:3;width:100%}
+  .clock{flex:1 1 100%;flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin-inline-start:0;padding:0;border:0;text-align:start}
+  .banner{padding:32px 24px 100px;flex-direction:column;text-align:center;gap:24px}
+  .hello h1{font-size:38px}
+  .stats,.apps,.reports{margin-inline:20px}
+  .apps{padding-inline:0}
+  .stat{padding:16px}
+  .stat .n{font-size:44px}
+  .stat:nth-child(odd){border-inline-start:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line2)}
+  .row{grid-template-columns:1fr;gap:4px}
+}
+@media(max-width:480px){.topbar nav{gap:14px;flex-wrap:nowrap;justify-content:space-between}.hello h1{font-size:30px}.medal{width:170px;height:204px;border-radius:85px 85px 14px 14px}.medal img{width:140px;height:140px}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="topbar">
+  <b>وزارة الأوقاف المصرية</b>
+  <nav aria-label="التنقل الرئيسي">
+    <a href="#top" class="on">الرئيسية</a>
+    <a href="#apps">التطبيقات</a>
+    <a href="#reports">التقارير</a>
+  </nav>
+  <div class="clock" aria-label="التاريخ والوقت"><b id="time"></b><span id="gdate"></span><span id="hdate"></span></div>
+  <div class="who"><b>معالي وزير الأوقاف</b><i aria-hidden="true">م</i></div>
+</div>
+
+<section class="banner" id="top">
+  <div class="pat"></div><div class="sheen"></div>
+  <i class="star" style="left:8%;top:20%"></i>
+  <i class="star" style="left:22%;top:70%;animation-duration:4s;animation-delay:.5s"></i>
+  <i class="star" style="left:35%;top:35%;animation-duration:5s;animation-delay:1s"></i>
+  <i class="star" style="left:48%;top:82%;animation-delay:1.5s"></i>
+  <i class="star" style="left:60%;top:18%;animation-duration:4s;animation-delay:2s"></i>
+  <i class="star" style="left:72%;top:60%;animation-duration:5s;animation-delay:2.5s"></i>
+  <i class="star" style="left:85%;top:30%;animation-delay:3s"></i>
+  <i class="star" style="left:93%;top:78%;animation-duration:4s;animation-delay:3.5s"></i>
+  <div class="medal"><img src="logo.jpg" alt="شعار وزارة الأوقاف المصرية"></div>
+  <div class="hello">
+    <div class="greet">مرحبًا بمعالي الوزير</div>
+    <h1>التحول الرقمي يتقدّم… وإنجازاته بين يديكم</h1>
+    <p>آخر ما أضافه مكتب مساعد الوزير من تطبيقات وتقارير نجاح</p>
+  </div>
+</section>
+
+<section class="stats" aria-label="مؤشرات سريعة">
+  <div class="stat"><span class="n" id="nApps">٤</span><b>أهم التطبيقات</b></div>
+  <div class="stat"><span class="n" id="nUsers">٤٥٠٠</span><b>إجمالي المستخدمين</b></div>
+  <div class="stat"><span class="n" id="nTotalApps">١٢</span><b>إجمالي التطبيقات</b></div>
+  <div class="stat"><span class="n" id="nReps">٣</span><b>تقارير النجاح</b></div>
+</section>
+
+<section class="apps" id="apps" aria-label="أهم التطبيقات"></section>
+
+<section class="reports" id="reports" aria-labelledby="repH">
+  <h2 id="repH">تقارير النجاح الدورية</h2>
+  <div id="repList"></div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var P = 'awqaf_';
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var ar = function (n) { return Number(n).toLocaleString('ar-EG', { useGrouping: false }); };
+  var rd = function (n) { try { return JSON.parse(localStorage.getItem(P + n)) || []; } catch (e) { return []; } };
+
+  var ICON = {
+    kpi: '<path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 16V8"/>',
+    book: '<path d="M12 6c-2-2-5-2-8-1v13c3-1 6-1 8 1 2-2 5-2 8-1V5c-3-1-6-1-8 1zM12 6v13"/>',
+    mosque: '<path d="M12 3c-3 3-6 4-6 8h12c0-4-3-5-6-8zM5 11v10h14V11M12 21v-5"/>',
+    move: '<path d="M4 8h13l-3-3M20 16H7l3 3"/>',
+    grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'
+  };
+  var GRAD = {
+    gold: 'linear-gradient(135deg,#E3B84F,#9C7218)',
+    bronze: 'linear-gradient(135deg,#9C7218,#5C430C)',
+    red: 'linear-gradient(135deg,#E0384F,#9E0C22)',
+    dark: 'linear-gradient(135deg,#6B5522,#2B2108)'
+  };
+  // colour keys written by the assistant page → 3a gradients
+  var COLOR = { blue: GRAD.gold, ok: GRAD.bronze, warn: GRAD.red, plum: GRAD.dark };
+
+  // ministry-wide totals (not derived from the cards below)
+  var TOTAL_APPS = 12, TOTAL_USERS = 4500;
+
+  var BASE_APPS = [
+    { name: 'منظومة مؤشرات الأداء الاستراتيجية', url: 'https://awkaf.Strategizeit.us', desc: 'متابعة المؤشرات الرئيسية للوزارة ومقارنتها بالمستهدف.', g: GRAD.gold, icon: 'kpi', status: 'يعمل' },
+    { name: 'المسابقة العالمية للقرآن الكريم', url: 'https://contest.strategizeit.us/ar/login', desc: 'إدارة التسجيل والتحكيم والنتائج للمسابقة.', g: GRAD.bronze, icon: 'book', status: 'يعمل' },
+    { name: 'منظومة إدخال بيانات المساجد', url: 'https://awaf-mosques.strategizeit.us/login', desc: 'حصر المساجد وحالتها ومتابعة التحديث من المديريات.', g: GRAD.red, icon: 'mosque', status: 'محدَّث حديثًا' },
+    { name: 'منظومة التنقلات والتعيينات', url: 'https://transfer.strategizeit.us/', desc: 'طلبات النقل والتعيين ومسار اعتمادها حتى القرار.', g: GRAD.dark, icon: 'move', status: 'يعمل' }
+  ];
+  var BASE_REPS = [
+    { period: 'الربع الثالث', title: 'إنجازات منظومة المساجد', att: '٦ صور · فيديو' },
+    { period: 'سبتمبر ٢٠٢٦', title: 'نتائج المسابقة العالمية للقرآن', att: '١٢ صورة · فيديو' },
+    { period: 'الربع الثاني', title: 'مؤشرات الأداء الاستراتيجية', att: '٣ صور' }
+  ];
+
+  function appCard(a) {
+    var url = a.url && a.url !== '#' ? a.url : '';
+    var link = url
+      ? '<a class="open" href="' + esc(url) + '" target="_blank" rel="noopener">'
+      : '<a class="open off" aria-disabled="true" role="link" tabindex="-1">';
+    return '<article class="app"><div class="bar" style="background:' + a.g + '"></div>' +
+      '<div class="head"><div class="ico" style="background:' + a.g + '"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICON[a.icon] + '</svg></div>' +
+      '<span class="pill' + (a.status === 'يعمل' ? '' : ' new') + '">' + esc(a.status) + '</span></div>' +
+      '<div><h3>' + esc(a.name) + '</h3><p>' + esc(a.desc) + '</p></div>' +
+      link + 'فتح التطبيق<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></article>';
+  }
+
+  function render() {
+    var apps = rd('apps').sort(function (a, b) { return b.ts - a.ts; }),
+        reps = rd('reports').sort(function (a, b) { return b.ts - a.ts; });
+
+    var added = apps.map(function (a) {
+      return { name: a.name, desc: a.desc || '', g: COLOR[a.color] || GRAD.gold, icon: 'grid', status: 'جديد', url: a.url };
+    });
+    $('apps').innerHTML = added.concat(BASE_APPS).map(appCard).join('');
+
+    var addedR = reps.map(function (r) {
+      var n = (r.files || []).length;
+      return { period: r.period || '—', title: r.title, att: n ? ar(n) + ' مرفقات' : 'بدون مرفقات' };
+    });
+    $('repList').innerHTML = addedR.concat(BASE_REPS).map(function (r) {
+      return '<div class="row"><b class="per">' + esc(r.period) + '</b><b>' + esc(r.title) + '</b><small>' + esc(r.att) + '</small></div>';
+    }).join('');
+
+    $('nApps').textContent = ar(added.length + BASE_APPS.length);
+    $('nReps').textContent = ar(addedR.length + BASE_REPS.length);
+    $('nTotalApps').textContent = ar(TOTAL_APPS);
+    $('nUsers').textContent = ar(TOTAL_USERS);
+  }
+
+  // nav highlight follows the section in view
+  var links = document.querySelectorAll('.topbar nav a');
+  links.forEach(function (l) {
+    l.addEventListener('click', function () {
+      links.forEach(function (x) { x.classList.remove('on'); });
+      l.classList.add('on');
+    });
+  });
+
+  function tick() {
+    var d = new Date();
+    try {
+      $('time').textContent = d.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+      $('gdate').textContent = d.toLocaleDateString('ar-EG', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      $('hdate').textContent = d.toLocaleDateString('ar-EG-u-ca-islamic-umalqura', { day: 'numeric', month: 'long', year: 'numeric' });
+    } catch (e) {}
+  }
+  tick();
+  setInterval(tick, 15000);
+
+  window.addEventListener('storage', render);
+  render();
+})();
+</script>
+</body>
+</html>
